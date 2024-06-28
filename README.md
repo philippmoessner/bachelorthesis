@@ -12,12 +12,16 @@ https://drive.google.com/file/d/1bYnWH0TajuTc2Iqec1bFZa-j5WkhCoSM
 
 ### Was dieses Repository enthält:
 Es befinden sich zwei Jupyter-Notebooks in diesem Repository, in denen der Code für diese Arbeit entwickelt wurde:
-1. ```main.py```
+1. ```main.ipynb```
    In diesem File ist der Code
    - zum Aufbau des Datensatzes COCOXGEN (Auswwahl der COCO-Bilder aus COCO-val2017 und Generierung der Bilder mit Fooocus und SDXL)
    - zur Auswahl der Studienbilder aus COCOXGEN
    - zum Test des maschinellen Detektors
    - zur Auswertung der Daten der Studienteilnehmer und des maschinellen Detektors
   zu finden
-2. ```detection_model/output_visualization.py```
-   Der Ordner ```detection_model``` entspricht dem Repository https://github.com/grip-unina/DMimageDetection/. Es wurde ein weiteres Python-File hinzugefügt ```output_visualization.py```, das die Heatmaps des Detektors für alle Testbilder erstellt.
+2. ```detection_model_output_visualization.ipynb```
+   Dieses Notebook enthält den Code, mit dem die Heatmaps des Detektors für alle Testbilder erstellt wurden.
+
+Um den maschinellen Detektor in ```main.ipynb``` testen und die Heatmaps in ```detection_model_output_visualization.ipynb``` erstellen zu können, müssen das Repository und die Gewichte des Detektors heruntergeladen und diesem Repository beigefügt werden.
+Der Detektor entstammt der Arbeit von Corvi et al. (2023) und ist hier verfügbar: https://github.com/grip-unina/DMimageDetection/
+Er sollte in einem Ordner mit dem Namem ```detection_model``` in diesem Repository abgelegt werden.
